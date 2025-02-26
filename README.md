@@ -1,2 +1,2 @@
-# STATEMENT-LABS---Spleen-AFX-
+# Spleen-AFX
 STATEMENT LABS Spleen AFX - Frontend
