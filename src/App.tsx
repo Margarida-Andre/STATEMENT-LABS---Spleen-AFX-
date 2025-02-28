@@ -1,10 +1,9 @@
-import { Dashboard } from "./pages/dashboard";
-import { Login } from "./pages/login";
+import AppRoutes from "./routes";
 
 function App() {
 
   return (
-    <Dashboard/>
+    <AppRoutes/>
   )
 }
 
