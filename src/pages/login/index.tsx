@@ -7,9 +7,16 @@ import { Button } from "../../components/button";
 import { Checkbox } from "../../components/checkbox";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function Login(){
     const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
+
+    const handleSubmit = () => {
+      navigate("/dashboard");
+    }
+
     return(
         <Layout>
             <div className="flex items-center justify-between px-60">
@@ -56,7 +63,7 @@ export function Login(){
             </div>
 
             <div className="mt-5">
-            <Button>Iniciar Sessão</Button>   
+            <Button onClick={handleSubmit}>Iniciar Sessão</Button>   
             </div>         
             </form> 
             </div>
