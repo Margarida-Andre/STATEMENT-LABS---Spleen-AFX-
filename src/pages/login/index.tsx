@@ -1,12 +1,15 @@
-import { Layout } from "../../components/layout";
+import { Layout } from "../../views/layout";
 import Image from "../../assets/image-log.svg";
 import Logo from "../../assets/logo.svg";
 import { Input } from "../../components/input";
 import { Label } from "../../components/label";
 import { Button } from "../../components/button";
 import { Checkbox } from "../../components/checkbox";
+import { useState } from "react";
+import { Eye, EyeOff } from "lucide-react";
 
 export function Login(){
+    const [showPassword, setShowPassword] = useState(false);
     return(
         <Layout>
             <div className="flex items-center justify-between px-60">
@@ -24,15 +27,22 @@ export function Login(){
             </div>
             </div>
 
-            <div className="flex-col mt-4">
+            <div className="relative flex-col mt-4">
             <Label>Password</Label>
 
             <div className="mt-2">
-            <Input type="password" id="password" name="password" placeholder="8+ caracteres necessários"/>
+            <Input type={showPassword ? "text" : "password" } id="password" name="password" placeholder="8+ caracteres necessários"/>
+            <button
+            type="button"
+            onClick={() => setShowPassword(!showPassword)}
+            className="absolute right-4 top-14 transform -translate-y-1/2 text-gray-500 hover:text-blue-500 focus:outline-none"
+        >
+            {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+        </button>
             </div>
             </div>
 
-            <div className="flex justify-between items-center mt-2">
+            <div className="flex justify-between items-center mt-3">
             <div className="flex items-center">
             <Checkbox id="checkbox" name="checkbox"/>
             <p className="font-inter font-normal text-[16px] leading-[24px] tracking-[0px] text-white ml-3">Mantenha-me Logado</p>

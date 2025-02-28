@@ -1,9 +1,10 @@
-import { Login } from "./views/login";
+import { Dashboard } from "./pages/dashboard";
+import { Login } from "./pages/login";
 
 function App() {
 
   return (
-    <Login/>
+    <Dashboard/>
   )
 }
 
