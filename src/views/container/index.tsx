@@ -5,7 +5,7 @@ import { containerProps } from "./type";
 
 const Container = ({children}: containerProps) => {
   return (
-    <div className="flex bg-gray-800 min-h-screen h-screen overflow-hidden pb-44">
+    <div className="flex bg-gray-800 min-h-screen h-screen overflow-hidden">
     <Sidebar />
     <Layout >
       <Header />
