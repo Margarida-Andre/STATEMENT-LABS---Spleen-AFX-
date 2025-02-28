@@ -16,7 +16,7 @@ const TopMusics = () => {
         </thead>
         <tbody>
           {topMusics.map((musica, index) => (
-            <tr key={musica.id} className="border-b border-gray-700">
+            <tr key={musica.id}>
               <td className="py-2">{String(index + 1).padStart(2, "0")}</td>
               <td className="py-2">
                 <img src={musica.image} alt={musica.title} className="w-10 h-10 rounded-md" />

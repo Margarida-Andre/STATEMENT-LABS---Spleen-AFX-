@@ -2,7 +2,7 @@ export const slides = [
     {
       title: "POP!",
       artist: "Im Nayeon",
-      image: "https://via.placeholder.com/500x250", 
+      image: "/slideImage.svg", 
       plays: "2.450",
       likes: "922",
       shares: "4.349",
@@ -10,7 +10,7 @@ export const slides = [
     {
       title: "LALISA",
       artist: "Lisa",
-      image: "https://via.placeholder.com/500x250",
+      image: "/slideImage.svg",
       plays: "3.210",
       likes: "1.102",
       shares: "5.678",
@@ -18,7 +18,7 @@ export const slides = [
     {
       title: "Seven",
       artist: "Jungkook",
-      image: "https://via.placeholder.com/500x250",
+      image: "/slideImage.svg",
       plays: "5.890",
       likes: "2.334",
       shares: "7.120",

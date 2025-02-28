@@ -5,7 +5,7 @@ const PremiumOffer = () => {
         style={{ 
           width: "322px",
           height: "159px",
-          backgroundImage: "url('/images/premium-bg.jpg')",
+          backgroundImage: "url('/premium.svg')",
           borderTopLeftRadius: "32px",
           borderTopRightRadius: "8px",
           borderBottomRightRadius: "32px",

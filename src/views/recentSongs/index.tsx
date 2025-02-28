@@ -19,7 +19,7 @@ const RecentSongs = () => {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="w-full">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-white text-lg font-bold">Ouvidas recentemente</h2>
         <div className="flex gap-2">
@@ -42,7 +42,7 @@ const RecentSongs = () => {
 
       <div className="flex gap-4 overflow-hidden">
         {recentSongs.slice(startIndex, startIndex + itemsPerPage).map((song) => (
-          <div key={song.id} className="w-32 flex flex-col items-center">
+          <div key={song.id} className="w-[190px] flex flex-col items-center justify-start p0">
             <img src={song.image} alt={song.title} className="w-32 h-32 rounded-lg" />
             <p className="text-white text-sm mt-2">{song.title}</p>
             <p className="text-gray-400 text-xs">{song.artist}</p>

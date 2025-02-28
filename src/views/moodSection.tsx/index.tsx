@@ -19,8 +19,7 @@ const MoodSection = () => {
   };
 
   return (
-    <div className="relative w-full">
-      {/* Título e setas no topo */}
+    <div className="w-full pb-32">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-white text-lg font-bold">Mood</h2>
         <div className="flex gap-2">
@@ -41,12 +40,11 @@ const MoodSection = () => {
         </div>
       </div>
 
-      {/* Carrossel de Mood */}
       <div className="flex gap-4 overflow-hidden">
         {moodData.slice(startIndex, startIndex + itemsPerPage).map((mood) => (
-          <div key={mood.id} className="w-32 flex flex-col items-center">
+          <div key={mood.id} className="w-30 flex flex-col items-center">
             <div className="relative">
-              <img src={mood.image} alt={mood.title} className="w-32 h-32 rounded-lg" />
+              <img src={mood.image} alt={mood.title} className="w-35 h-35 rounded-lg" />
               <p className="absolute top-2 left-2 text-white font-bold">{mood.title}</p>
             </div>
             <p className="text-white text-sm mt-2">{mood.description}</p>

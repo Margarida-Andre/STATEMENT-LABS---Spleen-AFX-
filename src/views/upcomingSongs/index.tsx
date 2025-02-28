@@ -13,9 +13,9 @@ const UpcomingSongsView = () => {
   };
 
   return (
-    <div className="p-6">
+    <div className="w-full">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-white text-2xl font-bold">Novas músicas por lançar</h2>
+        <h2 className="text-white text-lg font-bold">Novas músicas por lançar</h2>
         <div className="flex gap-3">
           <button
             onClick={() => scroll(-720)} 
@@ -33,7 +33,7 @@ const UpcomingSongsView = () => {
         </div>
       </div>
 
-      <div className="overflow-hidden w-[720px]">
+      <div className="overflow-hidden w-[895px]">
         <div
           ref={scrollRef}
           className="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth"
@@ -42,7 +42,7 @@ const UpcomingSongsView = () => {
           {upcomingSongs.map((song) => (
             <div
               key={song.id}
-              className="relative w-[350px] h-[200px] bg-cover bg-center rounded-xl overflow-hidden flex-shrink-0"
+              className="relative w-[430px] h-[200px] bg-cover bg-center rounded-xl overflow-hidden flex-shrink-0"
               style={{ backgroundImage: `url(${song.image})` }}
             >
               <span className="absolute top-3 left-3 bg-yellow-400 text-black text-xs px-2 py-1 rounded-lg">

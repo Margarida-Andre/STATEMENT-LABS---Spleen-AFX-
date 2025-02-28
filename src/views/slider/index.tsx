@@ -25,7 +25,8 @@ export const Slider = () => {
               <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
                 <button className="text-white text-2xl">←</button>
               </div>
-              <div className="text-white">
+
+              <div className="text-white pl-12">
                 <h2 className="text-3xl font-bold">{slide.title}</h2>
                 <p className="text-lg text-yellow-300">Por {slide.artist}</p>
                 <div className="flex items-center gap-4 mt-4">
@@ -40,7 +41,8 @@ export const Slider = () => {
                   </span>
                 </div>
               </div>
-              <img src={slide.image} alt={slide.title} className="w-40 rounded-lg" />
+              <img src={slide.image} alt={slide.title} className="w-43 rounded-lg pr-12" />
+
               <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
                 <button className="text-white text-2xl">→</button>
               </div>

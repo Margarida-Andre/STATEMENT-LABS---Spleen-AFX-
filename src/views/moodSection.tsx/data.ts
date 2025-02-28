@@ -3,31 +3,31 @@ export const moodData = [
       id: 1,
       title: "Semangat Pagi",
       description: "Menemanimu sarapan dengan lagu hits",
-      image: "/images/mood1.jpg",
+      image: "/mood-1.svg",
     },
     {
       id: 2,
       title: "Sad Banget",
       description: "Jangan ditahan nangis aja",
-      image: "/images/mood2.jpg",
+      image: "/mood-2.svg",
     },
     {
       id: 3,
       title: "Mager Banget",
       description: "Asikin aja magernya dengan musik hits",
-      image: "/images/mood3.jpg",
+      image: "/mood-3.svg",
     },
     {
       id: 4,
       title: "I Love You",
       description: "I love you so much, hope you’ll know it",
-      image: "/images/mood4.jpg",
+      image: "/mood-4.svg",
     },
     {
       id: 5,
       title: "Nugas Nih",
       description: "Nugas sambil ditemenin lagu memang asik",
-      image: "/images/mood5.jpg",
+      image: "/mood-5.svg",
     },
   ];
   

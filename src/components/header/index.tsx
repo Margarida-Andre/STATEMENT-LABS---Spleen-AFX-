@@ -24,7 +24,7 @@ export const Header = () => {
           <p className="font-semibold">Jerome Bell</p>
           <p className="text-sm text-gray-400">jeromebell@gmail.com</p>
         </div>
-        <button className="text-gray-300 text-lg">▼</button>
+        <img src="/row.svg" alt="row" className="cursor-pointer"/>
       </div>
     </header>
   );
